@@ -14,7 +14,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -28,7 +28,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -42,7 +42,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -56,7 +56,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -70,7 +70,7 @@ module.exports = {
           opponent: "DHSC VR1",
           home: true,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -84,7 +84,7 @@ module.exports = {
           opponent: "FC Delta Sports '95 VR1",
           home: false,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -99,7 +99,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -113,7 +113,7 @@ module.exports = {
           opponent: null,
           home: null,
 
-          // userId: 1,
+          userId: 1,
           // categoryId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
