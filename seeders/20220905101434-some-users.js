@@ -17,7 +17,7 @@ module.exports = {
           image: "",
           isAdmin: true,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -32,7 +32,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -47,7 +47,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -62,7 +62,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -73,11 +73,11 @@ module.exports = {
           lastName: "van Engelenburg",
           line: "Defense",
           position: "Central defender",
-          backNumber: 1,
+          backNumber: 5,
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -92,7 +92,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -107,7 +107,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -122,7 +122,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -137,7 +137,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -152,7 +152,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -167,7 +167,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -182,7 +182,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -197,7 +197,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -212,7 +212,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -227,7 +227,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -242,7 +242,7 @@ module.exports = {
           image: "",
           isAdmin: false,
 
-          // teamId: 1,
+          teamId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
