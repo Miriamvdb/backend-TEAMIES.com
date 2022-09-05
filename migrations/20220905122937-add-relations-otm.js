@@ -23,9 +23,21 @@ module.exports = {
       onUpdate: "CASCADE",
       onDelete: "SET NULL",
     });
+
+    // Relation 3
+    await queryInterface.addColumn("events", "categoryId", {
+      type: Sequelize.INTEGER,
+      references: {
+        model: "categories",
+        key: "id",
+      },
+      onUpdate: "CASCADE",
+      onDelete: "SET NULL",
+    });
   },
 
   async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable("events", "categoryId"); // Relation 3
     await queryInterface.dropTable("events", "userId"); // Relation 2
     await queryInterface.dropTable("users", "teamId"); // Relation 1
   },

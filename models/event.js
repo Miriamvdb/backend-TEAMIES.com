@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       event.belongsTo(models.user, { foreignKey: "userId" });
+      event.hasOne(models.category, { foreignKey: "categoryId" });
     }
   }
   event.init(

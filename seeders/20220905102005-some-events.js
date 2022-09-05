@@ -15,7 +15,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 1,
+          categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -29,7 +29,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 1,
+          categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -43,7 +43,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 1,
+          categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -57,7 +57,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 1,
+          categoryId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -71,7 +71,7 @@ module.exports = {
           home: true,
 
           userId: 1,
-          // categoryId: 2,
+          categoryId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -85,7 +85,7 @@ module.exports = {
           home: false,
 
           userId: 1,
-          // categoryId: 2,
+          categoryId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -100,7 +100,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 3,
+          categoryId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -114,7 +114,7 @@ module.exports = {
           home: null,
 
           userId: 1,
-          // categoryId: 3,
+          categoryId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
