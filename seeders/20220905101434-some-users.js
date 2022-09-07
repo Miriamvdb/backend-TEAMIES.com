@@ -14,7 +14,8 @@ module.exports = {
           line: "Midfield",
           position: "Right midfielder",
           backNumber: 14,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Miriam_p3q0od.jpg",
           isAdmin: true,
 
           teamId: 1,
@@ -29,7 +30,8 @@ module.exports = {
           line: "Defense",
           position: "Central defender",
           backNumber: 13,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Britt_g4urlc.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -44,7 +46,8 @@ module.exports = {
           line: "Goal",
           position: "Goalkeeper",
           backNumber: 23,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Charlotte_nirhce.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -59,7 +62,8 @@ module.exports = {
           line: "Goal",
           position: "Goalkeeper",
           backNumber: 1,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Claire_bcvvq6.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -74,7 +78,8 @@ module.exports = {
           line: "Defense",
           position: "Central defender",
           backNumber: 5,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Claudia_sdlggr.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -89,7 +94,8 @@ module.exports = {
           line: "Defense",
           position: "Right defender",
           backNumber: 3,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Danike_kldnty.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -104,7 +110,8 @@ module.exports = {
           line: "Attack",
           position: "Striker",
           backNumber: 11,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Esra_mik8bh.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -119,7 +126,8 @@ module.exports = {
           line: "Midfield",
           position: "Central midfielder",
           backNumber: 7,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Ester_hyktes.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -134,7 +142,8 @@ module.exports = {
           line: "Defense",
           position: "Left defender",
           backNumber: 2,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Iris_detk9o.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -149,7 +158,8 @@ module.exports = {
           line: "Defense",
           position: "Right defender",
           backNumber: 18,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Kaylie_u9kzfh.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -164,7 +174,8 @@ module.exports = {
           line: "Defense",
           position: "Left defender",
           backNumber: 25,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Kyra_uv8fdd.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -179,7 +190,8 @@ module.exports = {
           line: "Attack",
           position: "Right winger",
           backNumber: 24,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Marianne_xzblx4.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -194,7 +206,8 @@ module.exports = {
           line: "Attack",
           position: "Left winger",
           backNumber: 9,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Miranda_hpiwdg.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -209,7 +222,8 @@ module.exports = {
           line: "Defense",
           position: "Central defender",
           backNumber: 8,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Merel_qn5v45.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -224,7 +238,8 @@ module.exports = {
           line: "Midfield",
           position: "Central midfielder",
           backNumber: 10,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Paulien_vm68t1.jpg",
           isAdmin: false,
 
           teamId: 1,
@@ -239,7 +254,8 @@ module.exports = {
           line: "Staff",
           position: "Coach",
           backNumber: null,
-          image: "",
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Rik_ynemal.png",
           isAdmin: false,
 
           teamId: 1,
