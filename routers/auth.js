@@ -7,8 +7,7 @@ const { SALT_ROUNDS } = require("../config/constants");
 
 const router = new Router();
 
-
-//login 
+//login
 router.post("/login", async (req, res, next) => {
   try {
     const { email, password } = req.body;
@@ -36,19 +35,34 @@ router.post("/login", async (req, res, next) => {
   }
 });
 
-
-//signup
+// F3: User sign up incl. creating all the profile information
+// http POST :4000/auth/signup firstName=Koen lastName=Wisse email=koen@koen.com password=koen line=Staff position="Beer deliverer" backNumber=47 image=""
 router.post("/signup", async (req, res) => {
-  const { email, password, name } = req.body;
-  if (!email || !password || !name) {
+  const {
+    firstName,
+    lastName,
+    email,
+    password,
+    line,
+    position,
+    backNumber,
+    image,
+  } = req.body;
+  if (!firstName || !lastName || !email || !password) {
     return res.status(400).send("Please provide an email, password and a name");
   }
 
   try {
     const newUser = await User.create({
+      firstName,
+      lastName,
       email,
       password: bcrypt.hashSync(password, SALT_ROUNDS),
-      name,
+      line,
+      position,
+      backNumber,
+      image,
+      teamId: 1, // Hardcoded for now because there is only 1 team.
     });
 
     delete newUser.dataValues["password"]; // don't send back the password hash
