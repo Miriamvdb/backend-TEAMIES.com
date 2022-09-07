@@ -7,7 +7,8 @@ const { SALT_ROUNDS } = require("../config/constants");
 
 const router = new Router();
 
-//login
+//F4: User can login and see the dashboard
+// http POST :4000/auth/login email=koen@koen.com password=koen
 router.post("/login", async (req, res, next) => {
   try {
     const { email, password } = req.body;
