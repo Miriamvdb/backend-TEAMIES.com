@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       title: { type: DataTypes.STRING, allowNull: false },
       descr: DataTypes.STRING,
-      date: { type: DataTypes.STRING, allowNull: false },
+      date: { type: DataTypes.DATE, allowNull: false },
       startTime: { type: DataTypes.TIME, allowNull: false },
       endTime: { type: DataTypes.TIME, allowNull: false },
       opponent: DataTypes.STRING,
