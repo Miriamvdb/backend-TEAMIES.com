@@ -3,6 +3,7 @@ const { Router } = require("express");
 const { toJWT } = require("../auth/jwt");
 const authMiddleware = require("../auth/middleware");
 const User = require("../models/").user;
+const UserEvent = require("../models").userEvent;
 const { SALT_ROUNDS } = require("../config/constants");
 
 const router = new Router();
@@ -85,10 +86,19 @@ router.post("/signup", async (req, res) => {
 // The /me endpoint can be used to:
 // - get the users email & name using only their token
 // - checking if a token is (still) valid
+// - F5: Checking all events where I specified my participation
+// http :4000/auth/me Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2MjcxNzQ2NCwiZXhwIjoxNjYyNzI0NjY0fQ.S78xXgTC3bmm2bUqFneX1eKrkBW9PMHiwLTdwRtQaj0"
 router.get("/me", authMiddleware, async (req, res) => {
+  const myParticipation = await UserEvent.findAll({
+    where: {
+      userId: req.user.id,
+      participation: [true, false],
+    },
+  });
+
   // don't send back the password hash
   delete req.user.dataValues["password"];
-  res.status(200).send({ ...req.user.dataValues });
+  res.status(200).send({ ...req.user.dataValues, myParticipation });
 });
 
 module.exports = router;

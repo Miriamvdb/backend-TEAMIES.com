@@ -10,6 +10,7 @@ module.exports = {
       },
       participation: {
         type: Sequelize.BOOLEAN,
+        allowNull: false,
       },
       userId: {
         type: Sequelize.INTEGER,

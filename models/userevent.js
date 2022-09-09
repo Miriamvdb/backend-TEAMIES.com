@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   userEvent.init(
     {
-      participation: DataTypes.BOOLEAN,
+      participation: { type: DataTypes.BOOLEAN, allowNull: false },
       userId: DataTypes.INTEGER,
       eventId: DataTypes.INTEGER,
     },
