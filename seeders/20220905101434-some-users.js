@@ -167,6 +167,22 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
+          email: "koen@koen.com",
+          password: bcrypt.hashSync("koen", 10),
+          firstName: "Koen",
+          lastName: "Wisse",
+          line: "Staff",
+          position: "Beer deliverer",
+          backNumber: 69,
+          image:
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662715289/EDO%20VR1/Koen_juc9da.jpg",
+          isAdmin: false,
+
+          teamId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
           email: "kyra@kyra.com",
           password: bcrypt.hashSync("kyra", 10),
           firstName: "Kyra",
@@ -255,7 +271,7 @@ module.exports = {
           position: "Coach",
           backNumber: null,
           image:
-            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Rik_ynemal.png",
+            "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662715569/EDO%20VR1/Rik_mzq3ai.jpg",
           isAdmin: false,
 
           teamId: 1,

@@ -6,6 +6,23 @@ module.exports = {
       "events",
       [
         {
+          // 1
+          title: "Sailing on the Utrecht canals + BBQ",
+          descr:
+            "Be there around 15.45, sailing starts 16:00. We finish with a BBQ @ the EDO canteen. ",
+          date: new Date("2022-09-24"),
+          startTime: "15:45",
+          endTime: "23:59",
+          opponent: null,
+          home: null,
+
+          userId: 1,
+          categoryId: 3,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          // 2
           title: "Training",
           descr: "",
           date: new Date("2022-09-26"),
@@ -20,6 +37,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
+          // 3
           title: "Training",
           descr: "",
           date: new Date("2022-09-28"),
@@ -34,6 +52,22 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
+          // 4
+          title: "Match",
+          descr: "",
+          date: new Date("2022-10-01"),
+          startTime: "14:30",
+          endTime: "16:15",
+          opponent: "DHSC VR1",
+          home: true,
+
+          userId: 1,
+          categoryId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          // 5
           title: "Training",
           descr: "",
           date: new Date("2022-10-03"),
@@ -48,6 +82,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
+          // 6
           title: "Training",
           descr: "",
           date: new Date("2022-10-05"),
@@ -62,21 +97,8 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title: "Match", // EDO VR1 - DHSC VR1
-          descr: "",
-          date: new Date("2022-10-01"),
-          startTime: "14:30",
-          endTime: "16:15",
-          opponent: "DHSC VR1",
-          home: true,
-
-          userId: 1,
-          categoryId: 2,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          title: "Match", // FC Delta Sports '95 VR1 - EDO VR1
+          // 7
+          title: "Match",
           descr: "",
           date: new Date("2022-10-08"),
           startTime: "14:30",
@@ -90,21 +112,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          title: "Sailing on the Utrecht canals + BBQ",
-          descr:
-            "Be there around 15.45, sailing starts 16:00. We finish with a BBQ @ the EDO canteen. ",
-          date: new Date("2023-09-24"),
-          startTime: "15:45",
-          endTime: "23:59",
-          opponent: null,
-          home: null,
-
-          userId: 1,
-          categoryId: 3,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
+          // 8
           title: "Training camp, Portugal",
           descr: "Jan 14th - Jan 18th, flight times will follow later",
           date: new Date("2023-01-14"),
