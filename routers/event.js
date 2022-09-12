@@ -47,7 +47,7 @@ router.patch(
         where: { eventId: eventId, userId: req.user.id },
       });
       if (userEventToUpdate) {
-        userEventToUpdate.update({ participation });
+        await userEventToUpdate.update({ participation });
       } else {
         await UserEvent.create({
           userId: req.user.id,
@@ -55,7 +55,28 @@ router.patch(
           participation: participation,
         });
       }
-      return res.status(200).send({ message: "Participation updated" });
+
+      // F5: Amount of (updated) attendees
+      const updatedEvent = await Event.findByPk(eventId, {
+        include: [
+          Category,
+          {
+            model: User,
+            as: "attendees",
+            attributes: ["id", "firstName"],
+            through: {
+              as: "participating",
+              attributes: ["participation"], // in model: userEvent, column: participation
+            },
+          },
+        ],
+      });
+
+      const updatedAttendees = updatedEvent.attendees;
+
+      return res
+        .status(200)
+        .send({ message: "Participation updated", updatedAttendees });
     } catch (e) {
       console.log(e.message);
       next(e);
