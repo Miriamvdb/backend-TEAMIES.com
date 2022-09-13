@@ -6,7 +6,7 @@ const Event = require("../models").event;
 const authMiddleware = require("../auth/middleware");
 const router = new Router();
 
-// F2 - GET all events incl. corresponding category - http GET :4000/events
+// F2: GET all events incl. corresponding category - http GET :4000/events
 router.get("/", async (req, res, next) => {
   try {
     const allEvents = await Event.findAll({
@@ -123,6 +123,31 @@ router.post("/newevent/:categoryId", authMiddleware, async (req, res, next) => {
     });
 
     return res.status(201).send({ message: "New event created", newEvent });
+  } catch (e) {
+    console.log(e.message);
+    next(e);
+  }
+});
+
+// F9: GET all events by id - http GET :4000/events/1
+router.get("/:id", async (req, res, next) => {
+  try {
+    const id = parseInt(req.params.id);
+    const eventById = await Event.findByPk(id, {
+      include: [
+        Category,
+        {
+          model: User,
+          as: "attendees",
+          attributes: ["id", "firstName"],
+          through: {
+            as: "participating",
+            attributes: ["participation"], // in model: userEvent, column: participation
+          },
+        },
+      ],
+    });
+    res.send(eventById);
   } catch (e) {
     console.log(e.message);
     next(e);
