@@ -29,6 +29,7 @@ module.exports = (sequelize, DataTypes) => {
       backNumber: DataTypes.INTEGER,
       image: DataTypes.STRING,
       isAdmin: DataTypes.BOOLEAN,
+      accepted: DataTypes.BOOLEAN,
     },
     {
       sequelize,

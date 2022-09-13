@@ -17,8 +17,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Miriam_p3q0od.jpg",
           isAdmin: true,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -33,8 +33,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Britt_g4urlc.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -49,8 +49,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Charlotte_nirhce.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -65,8 +65,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556302/EDO%20VR1/Claire_bcvvq6.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -81,8 +81,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Claudia_sdlggr.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -97,8 +97,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Danike_kldnty.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -113,8 +113,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Esra_mik8bh.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -129,8 +129,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Ester_hyktes.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -145,8 +145,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Iris_detk9o.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -161,8 +161,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Kaylie_u9kzfh.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -177,8 +177,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662715289/EDO%20VR1/Koen_juc9da.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -193,8 +193,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Kyra_uv8fdd.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: false,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -209,8 +209,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Marianne_xzblx4.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -225,8 +225,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Miranda_hpiwdg.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -241,8 +241,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556303/EDO%20VR1/Merel_qn5v45.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -257,8 +257,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662556304/EDO%20VR1/Paulien_vm68t1.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -273,8 +273,8 @@ module.exports = {
           image:
             "https://res.cloudinary.com/dxkac5ukc/image/upload/v1662715569/EDO%20VR1/Rik_mzq3ai.jpg",
           isAdmin: false,
-
           teamId: 1,
+          accepted: true,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
