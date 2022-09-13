@@ -4,12 +4,14 @@ const { toJWT } = require("../auth/jwt");
 const authMiddleware = require("../auth/middleware");
 const User = require("../models/").user;
 const UserEvent = require("../models").userEvent;
+const Event = require("../models").event;
 const { SALT_ROUNDS } = require("../config/constants");
 
 const router = new Router();
 
 //F4: User can login and see the dashboard
 // http POST :4000/auth/login email=koen@koen.com password=koen
+// http POST :4000/auth/login email=miriam@miriam.com password=miriam
 router.post("/login", async (req, res, next) => {
   try {
     const { email, password } = req.body;
@@ -96,9 +98,25 @@ router.get("/me", authMiddleware, async (req, res) => {
     },
   });
 
+  // F10:
+  // Check all events where my participation === true
+  const mySchedule = await UserEvent.findAll({
+    where: {
+      userId: req.user.id,
+      participation: true,
+    },
+    include: [Event],
+  });
+  // Map over mySchedule, and only send the events (the data I need to display).
+  const scheduleOnlyEvents = mySchedule.map((s) => s.event);
+
   // don't send back the password hash
   delete req.user.dataValues["password"];
-  res.status(200).send({ ...req.user.dataValues, myParticipation });
+  res.status(200).send({
+    ...req.user.dataValues,
+    myParticipation,
+    mySchedule: scheduleOnlyEvents,
+  });
 });
 
 module.exports = router;
