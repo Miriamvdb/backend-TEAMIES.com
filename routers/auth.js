@@ -9,7 +9,7 @@ const { SALT_ROUNDS } = require("../config/constants");
 
 const router = new Router();
 
-//F4: User can login and see the dashboard
+// F4: User can login and see the dashboard
 // http POST :4000/auth/login email=koen@koen.com password=koen
 // http POST :4000/auth/login email=miriam@miriam.com password=miriam
 router.post("/login", async (req, res, next) => {
@@ -28,6 +28,15 @@ router.post("/login", async (req, res, next) => {
       return res.status(400).send({
         message: "User with that email not found or password incorrect",
       });
+    }
+
+    // F11: User can't login yet when is not accepted by admin
+    const accepted = user.accepted;
+    console.log("Accepted? ", accepted);
+    if (accepted === false) {
+      return res
+        .status(400)
+        .send({ message: "Administator didn't confirm your sign up yet :)" });
     }
 
     delete user.dataValues["password"]; // don't send back the password hash
@@ -67,13 +76,17 @@ router.post("/signup", async (req, res) => {
       backNumber,
       image,
       teamId: 1, // Hardcoded for now because there is only 1 team.
+      isAdmin: false,
+      accepted: false,
     });
 
     delete newUser.dataValues["password"]; // don't send back the password hash
 
-    const token = toJWT({ userId: newUser.id });
-
-    res.status(201).json({ token, user: newUser.dataValues });
+    // F11: User can't login yet when is not accepted by admin
+    res.status(201).json({
+      message:
+        "Thanks for registering, the administrator will review your application and let you know :)",
+    });
   } catch (error) {
     if (error.name === "SequelizeUniqueConstraintError") {
       return res
