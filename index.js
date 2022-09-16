@@ -4,6 +4,7 @@ const corsMiddleWare = require("cors");
 
 //routers
 const authRouter = require("./routers/auth");
+const teamRouter = require("./routers/team");
 const playerRouter = require("./routers/player");
 const eventRouter = require("./routers/event");
 const categoryRouter = require("./routers/category");
@@ -24,6 +25,7 @@ app.use(express.json());
 
 //routes
 app.use("/auth", authRouter);
+app.use("/teams", teamRouter);
 app.use("/players", playerRouter);
 app.use("/events", eventRouter);
 app.use("/categories", categoryRouter);
