@@ -154,4 +154,28 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
+// F12: Admin can delete event
+// http DELETE :4000/events/2 authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJpYXQiOjE2NjM3NTEyNjQsImV4cCI6MTY2Mzc1ODQ2NH0.wxZ_1OIYWcCVP3SurgkBi6UN6imG27Tlth5nXtELjoo"
+router.delete("/:id", authMiddleware, async (req, res, next) => {
+  try {
+    if (req.user.isAdmin !== true) {
+      return res.status(403).send({
+        message: "You are not authorized to delete an event",
+      });
+    }
+
+    const id = parseInt(req.params.id);
+    const eventToDelete = await Event.findByPk(id);
+    if (!eventToDelete) {
+      res.status(404).send("This event is not found!");
+    } else {
+      const deletedEvent = await eventToDelete.destroy();
+      return res.status(204).send({ message: "Event is deleted!" });
+    }
+  } catch (e) {
+    console.log(e.message);
+    next(e);
+  }
+});
+
 module.exports = router;
