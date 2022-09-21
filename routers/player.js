@@ -52,6 +52,7 @@ router.patch("/:id", authMiddleware, async (req, res, next) => {
 });
 
 // F11: As an admin, I'm able to DELETE new registrations, to prevent that everybody can join our team
+// F13: Admin can delete players
 // http DELETE :4000/players/37 Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY2MzE1NjQ2OCwiZXhwIjoxNjYzMTYzNjY4fQ.DVQOqCjKW_3EWp4hltmVuONMpkEpDgCRsgGsJLoaa-Q"
 router.delete("/:id", authMiddleware, async (req, res, next) => {
   try {
@@ -74,5 +75,34 @@ router.delete("/:id", authMiddleware, async (req, res, next) => {
     next(e);
   }
 });
+
+// // F13: Admin can delete players
+// // http DELETE :4000/players/2
+// // authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJpYXQiOjE2NjM3NTEyNjQsImV4cCI6MTY2Mzc1ODQ2NH0.wxZ_1OIYWcCVP3SurgkBi6UN6imG27Tlth5nXtELjoo"
+// router.delete(
+//   "/:id",
+//   // authMiddleware,
+//   async (req, res, next) => {
+//     try {
+//       // if (req.user.isAdmin !== true) {
+//       //   return res.status(403).send({
+//       //     message: "You are not authorized to delete an event",
+//       //   });
+//       // }
+
+//       const id = parseInt(req.params.id);
+//       const playerToDelete = await Player.findByPk(id);
+//       if (!playerToDelete) {
+//         res.status(404).send("This player is not found!");
+//       } else {
+//         const deletedPlayer = await playerToDelete.destroy();
+//         return res.status(204).send({ message: "Player is deleted!" });
+//       }
+//     } catch (e) {
+//       console.log(e.message);
+//       next(e);
+//     }
+//   }
+// );
 
 module.exports = router;
