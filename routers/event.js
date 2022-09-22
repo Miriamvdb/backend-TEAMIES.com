@@ -18,7 +18,7 @@ router.get("/", async (req, res, next) => {
           attributes: ["id", "firstName"],
           through: {
             as: "participating",
-            attributes: ["participation"], // in model: userEvent, column: participation
+            attributes: ["participation", "isDriver"], // in model: userEvent, column: participation && isDriver
           },
         },
       ],
@@ -142,7 +142,7 @@ router.get("/:id", async (req, res, next) => {
           attributes: ["id", "firstName"],
           through: {
             as: "participating",
-            attributes: ["participation"], // in model: userEvent, column: participation
+            attributes: ["participation", "isDriver"], // in model: userEvent, column: participation
           },
         },
       ],
