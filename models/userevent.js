@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   userEvent.init(
     {
       participation: { type: DataTypes.BOOLEAN, allowNull: false },
+      isDriver: { type: DataTypes.BOOLEAN, defaultValue: false },
       userId: DataTypes.INTEGER,
       eventId: DataTypes.INTEGER,
     },

@@ -178,4 +178,26 @@ router.delete("/:id", authMiddleware, async (req, res, next) => {
   }
 });
 
+// F14: Driver or not
+// http PATCH :4000/events/1/drivers isDriver=true authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJpYXQiOjE2NjM4NDcwOTEsImV4cCI6MTY2Mzg1NDI5MX0.1PjRmUUjl2PEoQhNvu4ZoZgu282ca1BXJLwf8Fz4aJk"
+router.patch("/:eventId/drivers", authMiddleware, async (req, res, next) => {
+  try {
+    const eventId = req.params.eventId;
+    const { isDriver } = req.body;
+    const userEventToUpdate = await UserEvent.findOne({
+      where: { eventId: eventId, userId: req.user.id },
+    });
+    if (userEventToUpdate) {
+      await userEventToUpdate.update({ isDriver });
+    }
+
+    return res.status(200).send({
+      message: "Drivers updated",
+    });
+  } catch (e) {
+    console.log(e.message);
+    next(e);
+  }
+});
+
 module.exports = router;
