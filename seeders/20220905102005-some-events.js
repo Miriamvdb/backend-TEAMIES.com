@@ -6,11 +6,26 @@ module.exports = {
       "events",
       [
         {
+          // 0
+          title: "Match",
+          descr: "",
+          date: new Date("2022-09-24"),
+          startTime: "14:30",
+          endTime: "16:15",
+          opponent: "Feyenoord VR1",
+          home: false,
+
+          userId: 1,
+          categoryId: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
           // 1
           title: "Sailing on the Utrecht canals + BBQ",
           descr:
             "Be there around 15.45, sailing starts 16:00. We finish with a BBQ @ the EDO canteen. ",
-          date: new Date("2022-09-24"),
+          date: new Date("2022-09-25"),
           startTime: "15:45",
           endTime: "23:59",
           opponent: null,
@@ -58,7 +73,7 @@ module.exports = {
           date: new Date("2022-10-01"),
           startTime: "14:30",
           endTime: "16:15",
-          opponent: "DHSC VR1",
+          opponent: "FC Utrecht VR1",
           home: true,
 
           userId: 1,
@@ -103,7 +118,7 @@ module.exports = {
           date: new Date("2022-10-08"),
           startTime: "14:30",
           endTime: "16:15",
-          opponent: "FC Delta Sports '95 VR1",
+          opponent: "Ajax VR1",
           home: false,
 
           userId: 1,
